@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Front End Prototype</title>
 </head>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="undefined" crossorigin="anonymous"></script>
 <style>
     header {
         font-family: sans-serif;
@@ -39,6 +38,7 @@
         color: white;
         text-align: center;
         font-family: sans-serif;
+        margin-bottom: 15px;
     }
 
     #work_with_businesses {
@@ -101,7 +101,17 @@
     footer {
         background-color: #990000;
     }
-
+    .sidebar-link{
+        padding: 15px;
+    }
+    .sidebar-link a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+    .sidebar-link a:hover{
+        color: black;
+    }
 </style>
 <body>
 <div class="container">
@@ -138,43 +148,37 @@
 <div class="row" id="welcome_header">
     <h1>Client Application Portal</h1>
 </div>
-<div class="container">
-    <div class="row">
-        <section class="col-md-3">
-            <p>sidebar</p>
+<div class="container mt-5">
+    <div class="row mt-5">
+        <section class="col-md-3 bg-danger">
+            <p class="sidebar-link">
+                <a href="">link1</a>
+            </p>
+            <p class="sidebar-link">
+                <a href="">link2</a>
+            </p>
+            <p class="sidebar-link">
+                <a href="">link3</a>
+            </p>
+            <p class="sidebar-link">
+                <a href="">link4</a>
+            </p>
+            <p class="sidebar-link">
+                <a href="">link5</a>
+            </p>
+            <p class="sidebar-link">
+                <a href="">link6</a>
+            </p>
+            <p class="sidebar-link">
+                <a href="">link7</a>
+            </p>
         </section>
         <section class="col-md-9">
-            <form action="" method="post" id="form">
-                <div class="mb-3 mt-3">
-                    <label for="company" class="form-label">Company Name</label>
-                    <input type="text" class="form-control" id="company">
-                </div>
-                <div class="mb-3">
-                    <label for="industry" class="form-label">Industry Name</label>
-                    <input type="text" class="form-control" id="industry">
-                </div>
-                <strong>Company Name:</strong> <input type="text" id="cname"> <br>
-                <br>
-                <strong>Industry:</strong> <input type="text" id="industry"> <br>
-                <br>
-                <strong>Contact First Name:</strong> <input type="text" id="fname"> <br>
-                <br>
-                <strong>Contact Last Name:</strong> <input type="text" id="lname"> <br>
-                <br>
-                <strong>Company Email:</strong> <input type="text" id="email"> <br>
-                <br>
-                <strong>Project Details:</strong> <br>
-                <textarea id="letter"></textarea> <br>
-                <br>
-                <form action="/action_page.php" id="resume">
-                    <strong>Additional Files:</strong>
-                    <input type="file" id="myFile" name="filename">
-                </form>
-                <br>
-                <form action="Frontend.Prototype.Template._clientconfirmation.html">
-                    <input type="submit" value="Submit Application" id="apply_button">
-                </form>
-            </form>
+            <div class="my-3">
+                <input type="file" id="file" class="form-control">
+            </div>
+            <button type="button" class="btn btn-danger btn-lg">Submit Final Document</button>
+
         </section>
     </div>
 </div>
