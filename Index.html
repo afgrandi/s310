@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Front End Prototype</title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+    header {
+        font-family: sans-serif;
+        color: #990000;
+        text-align: center;
+        font-size: large;
+        display: block;
+
+    }
+    a:link, a:visited {
+        color: #990000;
+        text-align: center;
+        font-size: medium;
+    }
+
+    #slogan {
+        background-color: white;
+        padding-top: 100px;
+    }
+
+    #navnavnav {
+        background-color: white;
+        padding-top: 100px;
+    }
+
+    #welcome_header {
+        background-color: #990000;
+        color: white;
+        text-align: center;
+        font-family: sans-serif;
+    }
+
+    #work_with_businesses {
+        padding-left: 300px;
+        padding-right: 300px;
+        font-family: sans-serif;
+    }
+
+    #student_form {
+        padding-left: 300px;
+        padding-right: 300px;
+        font-family: sans-serif;
+    }
+
+    #apply_button {
+        background-color: #990000;
+        border-radius: 5px;
+        color: white;
+        margin-left: 300px;
+        width: 350px;
+    }
+
+    #cname {
+        width: 288px
+    }
+
+    #industry {
+        width: 338px
+    }
+
+    #fname {
+        width: 264px
+    }
+
+    #lname {
+        width: 266px
+    }
+
+    #email {
+        width: 285px
+    }
+
+    #letter {
+        width: 400px;
+        height: 200px;
+    }
+
+    #form {
+        padding-left: 300px;
+        padding-right: 300px;
+        font-family: sans-serif;
+    }
+
+    #resume {
+        padding-left: 300px;
+        padding-right: 300px;
+        font-family: sans-serif;
+    }
+
+    footer {
+        background-color: #990000;
+    }
+
+</style>
+<body>
+<div class="container">
+
+    <header class="row">
+        <div class="col-xs-12 col-sm-6 col-md-2 col-lg-3">
+            <a href="Frontend.Prototype.Template._homepage.html"><img src="Project Future White.png" alt="Project Future Logo" title="Project Future Logo" width="250"></a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-5" id="slogan">
+            <h1></h1><strong>Project Future: Kelley Talent For Greater Good</strong></h1>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <nav class="navbar navbar-default" id="navnavnav">
+                <ul class="nav navbar-nav">
+                    <li><a href="Frontend.Prototype.Template._homepage.html">Home</a></li>
+                    <li><a href="Frontend.Prototype.Template._aboutus.html">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login <span class="caret"></span> </a>
+                        <ul class="dropdown-menu">
+                            <li> <a href="Frontend.Prototype.Template._tclogin.html"> Technical Committee</a></li>
+                            <li> <a href="Frontend.Prototype.Template._mclogin.html"> Management Committee</a></li>
+                            <li> <a href="Frontend.Prototype.Template._participantlogin.html"> Participants</a></li>
+                            <li> <a href="Frontend.Prototype.Template._clientlogin.html"> Clients</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Frontend.Prototype.Template._contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</div>
+
+
+<div class="row" id="welcome_header">
+    <h1>Client Application Portal</h1>
+</div>
+<div class="row" id="student_form">
+    <h3>Apply to work with Project Future and recieve valuable consulting services, all for free.</h3>
+    <p>Please contact Bikar Prabapin at <u>b.prabapin@iu.edu</u> with any questions.</p>
+</div>
+<br>
+<form action="" method="post" id="form">
+    <strong>Company Name:</strong> <input type="text" id="cname"> <br>
+    <br>
+    <strong>Industry:</strong> <input type="text" id="industry"> <br>
+    <br>
+    <strong>Contact First Name:</strong> <input type="text" id="fname"> <br>
+    <br>
+    <strong>Contact Last Name:</strong> <input type="text" id="lname"> <br>
+    <br>
+    <strong>Company Email:</strong> <input type="text" id="email"> <br>
+    <br>
+    <strong>Project Details:</strong> <br>
+    <textarea id="letter"></textarea> <br>
+    <br>
+    <form action="/action_page.php" id="resume">
+        <strong>Additional Files:</strong>
+        <input type="file" id="myFile" name="filename">
+    </form>
+    <br>
+    <form action="Frontend.Prototype.Template._clientconfirmation.html">
+        <input type="submit" value="Submit Application" id="apply_button">
+    </form>
+</form>
+</body>
+</html>
