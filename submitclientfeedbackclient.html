@@ -106,7 +106,7 @@
     }
     .sidebar-link a{
         text-decoration: none;
-        color: white;
+        color: papayawhip;
         font-weight: bold;
     }
     .sidebar-link a:hover{
@@ -152,40 +152,39 @@
     <div class="row mt-5">
         <section class="col-md-3 bg-danger">
             <p class="sidebar-link">
-                <a href="">link1</a>
+                <a href="">*Send Message*</a>
             </p>
             <p class="sidebar-link">
-                <a href="">link2</a>
+                <a href="">*View Project*</a>
             </p>
             <p class="sidebar-link">
-                <a href="">link3</a>
+                <a href="">*View Student Application*</a>
             </p>
             <p class="sidebar-link">
-                <a href="">link4</a>
+                <a href="">*View Client Application*</a>
             </p>
             <p class="sidebar-link">
-                <a href="">link5</a>
+                <a href="">*Submit Client Interview Details*</a>
             </p>
             <p class="sidebar-link">
-                <a href="">link6</a>
+                <a href="">*Form Teams*</a>
             </p>
             <p class="sidebar-link">
-                <a href="">link7</a>
+                <a href="">*Submit Request to Faculty Support*</a>
             </p>
         </section>
         <section class="col-md-9">
-            <div class="my-3">
-                <input type="file" id="file" class="form-control">
+
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5 class="card-title">Client Feedback</h5>
+                    <p class="card-text">{{lorem.rows(4).loop(2)}}</p>
+                </div>
             </div>
-            <button type="button" class="btn btn-danger btn-lg">Submit Final Document</button>
 
         </section>
     </div>
 </div>
-<div id="student_form">
-    <h3>Apply to work with Project Future and recieve valuable consulting services, all for free.</h3>
-    <p>Please contact Bikar Prabapin at <u>b.prabapin@iu.edu</u> with any questions.</p>
-</div>
-<br>
+<script src="https://cdn.jsdelivr.net/npm/fillr@1.0.0/fillr.min.js" defer></script>
 </body>
 </html>
